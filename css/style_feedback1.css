@@ -1,0 +1,15 @@
+@media only screen 
+and (min-device-width : 768px) 
+and (max-device-width : 1024px) and (orientation : portrait)  { 
+
+	.item_2{
+		border: 0 solid white !important;
+	}
+}
+
+@media only screen 
+and (max-width : 799px)  { 
+	.item_2{
+		border: 0 solid white !important;
+	}
+}

@@ -1,0 +1,174 @@
+@charset "utf-8";
+
+body {
+  position: absolute;
+  margin: 0;
+  /* Растягиваем body по высоте html */
+  min-height: 100%;
+}
+
+header{
+	width: 98%;
+}
+
+footer {
+  /* Позиционируем footer внизу main */
+  position: fixed;
+  bottom: 0;
+  width: 98%;
+  padding-bottom: 1.5vw;
+}
+
+#text_par_dinamo_galva{
+	display: block;
+	border:2px solid #e2e2e2;
+	text-align: center;
+	background-color:  #c63525;
+}
+#text_par_dinamo{
+	font-size: 18px;
+	display: block;
+	height: auto;
+	margin-left: 3%;
+	margin-right: 3%;
+	background-color:  white;
+	line-height:1em; 
+	line-height: 1.5;   
+}
+#animation{
+	animation: fadeIn 1.5s;
+	-webkit-animation:fadeIn 1.5s;
+}
+
+@keyframes fadeIn{
+	from{
+		opacity:0;
+	}
+	to{
+		opacity:1;
+	}
+}
+
+@-webkit-keyframes fadeIn{
+	from{
+		opacity:0;
+	}
+	to{
+		opacity:1;
+	}
+}
+@media screen and (max-height:1300px){
+	footer {
+		position: relative;
+		margin-bottom: -2%;
+	}
+}
+
+audio{
+	display: none;
+}
+
+
+#zinas{
+	font-family: "Segou", sans-serif;
+    color:#c63525;
+    font-size: 3vw;
+}
+
+
+
+.img_zinas {
+	width: 100%;
+	margin: 0.5% 0 0 0;
+	display: flex;
+	font-size:1vw;
+	font-family: "Segou", sans-serif;
+    color:#c63525;
+    font-weight: 600;
+}
+
+.img_zinas img{
+	padding-top: 1%;
+	width:50%;
+}	
+
+
+
+
+@media screen and (max-width: 768px){
+	.img_zinas {
+		flex-direction: column;
+		width: 100%;
+		font-size: 3vw;
+	}
+
+	#zinas{
+		font-size: 5vw;
+	}
+
+	.img_zinas img{
+		width: 80%;
+	}
+
+	.img.img1{
+		width: 83% !important;
+	}
+}
+
+
+@media screen and (min-width:769px){
+	.img_zinas img{
+		width: 80%;
+	}		
+	.img_zinas {
+		font-size:1.8vw;
+		line-height: 1.2;
+	}
+
+	.img_zinas p{
+		margin-top: 2%;
+	}
+
+}
+
+
+@media screen and (min-height:1300px){
+	.zinass{
+		margin-top: 25vw;
+	}
+}
+
+
+@media screen and (max-width: 430px){
+	#text_par_dinamo{
+		font-size: 4vw;
+	}
+
+	.img_zinas {
+		font-size:3.5vw;
+	}
+}
+
+@media only screen and (min-device-width: 1024px) and (max-device-width: 1366px) and (-webkit-min-device-pixel-ratio: 2)  and (orientation: landscape)  {
+		footer{
+			position: fixed;
+		}
+
+		#strelka{
+		display: none;
+	}
+}
+
+@media only screen and (min-device-width: 1024px) and (max-device-width: 1366px) and (-webkit-min-device-pixel-ratio: 2)  and (orientation: portrait)  {
+		#strelka{
+		display: none;
+	}
+}
+@media only screen 
+and (min-device-width : 768px) 
+and (max-device-width : 1024px) 
+and (orientation : landscape) {
+	#strelka{
+		display: none;
+	}
+}
